@@ -11,6 +11,10 @@
 |
 */
 
+use App\Http\Controllers\ImageController;
+
+Route::get('/i/{id}', 'ImageController@item');
+
 Route::get('/', function () {
     return view('welcome');
 });
